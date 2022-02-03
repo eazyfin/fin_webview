@@ -6,6 +6,9 @@
         <activity android:name=".FinWebViewActivity"
         android:exported="true"
         ></activity>
+          <activity android:name=".WebViewActivity"
+           android:exported="false"
+           android:theme="@style/AppTheme1"/>
     </application>
 
 </manifest>
