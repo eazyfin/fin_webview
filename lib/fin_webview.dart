@@ -11,6 +11,6 @@ class FinWebview {
   }
 
   static showWebView(title, url) async {
-    await _channel.invokeMethod('showWebView', {'url': url});
+    await _channel.invokeMethod('showWebView', {'url': url, 'title': title});
   }
 }
