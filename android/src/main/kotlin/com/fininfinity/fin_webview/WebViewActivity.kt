@@ -2,6 +2,7 @@ package com.fininfinity.fin_webview
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.ActionBar
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -74,8 +75,6 @@ class WebViewActivity : FlutterActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
-        actionBar!!.setDisplayHomeAsUpEnabled(true);
-        actionBar!!.setDisplayShowTitleEnabled(false)
         val doneButton = Button(this)
         doneButton.setText("Done")
         val layoutParams = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

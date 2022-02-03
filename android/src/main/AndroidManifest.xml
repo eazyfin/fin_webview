@@ -3,7 +3,9 @@
     package="com.fininfinity.fin_webview">
 
     <application>
-        <activity android:name=".FinWebViewActivity"></activity>
+        <activity android:name=".FinWebViewActivity"
+        android:exported="true"
+        ></activity>
     </application>
 
 </manifest>

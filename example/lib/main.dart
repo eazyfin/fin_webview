@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:fin_webview/fin_webview.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,13 +50,22 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
-      ),
+          appBar: new AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: Center(
+            child: MaterialButton(
+              onPressed: () {
+                FinWebview.showWebView(
+                    'Register', 'https://tinyurl.com/yxjg6wah');
+              },
+              child: Text(
+                "Show Aleart",
+                style: TextStyle(color: Colors.white),
+              ),
+              color: Colors.blue,
+            ),
+          )),
     );
   }
 }
