@@ -76,6 +76,7 @@ class WebViewActivity : FlutterActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         val doneButton = Button(this)
         doneButton.setText("Done")
+        doneButton.setTextColor(resources.getColor(R.color.design_default_color_on_surface))
         val layoutParams = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Toolbar.LayoutParams(
                 Toolbar.LayoutParams.WRAP_CONTENT,
