@@ -67,6 +67,6 @@ class FinWebviewPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     override fun onDetachedFromActivity() {
-
+        channel!!.setMethodCallHandler(null)
     }
 }
