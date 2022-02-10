@@ -25,7 +25,9 @@ class FinWebviewPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private  var activity: Activity? = null
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "fin_webview")
-    channel!!.setMethodCallHandler(this)
+    if(channel!=null) {
+        channel!!.setMethodCallHandler(this)
+    }
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
@@ -40,7 +42,7 @@ class FinWebviewPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   }
 
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-    channel!!.setMethodCallHandler(null)
+      if(channel!=null) channel!!.setMethodCallHandler(null)
   }
 
   private fun launchWebView(call: MethodCall, result:MethodChannel.Result){
@@ -67,6 +69,6 @@ class FinWebviewPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     override fun onDetachedFromActivity() {
-        channel!!.setMethodCallHandler(null)
+        
     }
 }
