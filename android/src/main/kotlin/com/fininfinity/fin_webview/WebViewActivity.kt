@@ -21,6 +21,7 @@ import android.widget.Button
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.annotation.NonNull
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import io.flutter.embedding.android.FlutterActivity
