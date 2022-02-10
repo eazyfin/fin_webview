@@ -2,7 +2,6 @@ package com.fininfinity.fin_webview
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.ActionBar
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -22,7 +21,6 @@ import android.widget.Button
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.annotation.NonNull
-import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import io.flutter.embedding.android.FlutterActivity
