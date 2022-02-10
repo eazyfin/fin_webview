@@ -3,4 +3,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <type id="android" />
   </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="fin_webview_android" />
+      </set>
+    </option>
+  </component>
 </project>

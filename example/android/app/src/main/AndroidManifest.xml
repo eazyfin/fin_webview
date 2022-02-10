@@ -3,9 +3,6 @@
    <application
         android:label="fin_webview_example"
         android:icon="@mipmap/ic_launcher">
-       <activity android:name="com.fininfinity.fin_webview.WebViewActivity"
-           android:exported="false"
-           android:theme="@style/AppTheme1"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
